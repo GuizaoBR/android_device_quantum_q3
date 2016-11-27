@@ -10,10 +10,6 @@ service akmd8963 /system/bin/akmd8963
     user system
     group system
 
-service af7133d /system/bin/af7133d
-    disabled
-    user system
-    group system
 
 on post-fs
 #
@@ -56,6 +52,9 @@ on post-fs
     
     # Load WiFi Driver
     #insmod /system/lib/modules/wlan.ko
+
+mkdir /mnt/media_rw/usbotg 0700 media_rw media_rw
+mkdir /storage/usbotg 0700 root root
 
 #
 # Connectivity related modules and character device nodes (Ends)

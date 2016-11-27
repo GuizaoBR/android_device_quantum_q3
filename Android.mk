@@ -17,4 +17,11 @@ LOCAL_PATH := $(call my-dir)
 
 ifneq (,$(filter q3,$(TARGET_DEVICE)))
 include $(call all-makefiles-under,$(LOCAL_PATH))
+
+# Many modules depend on kernel headers to build via
+# LOCAL_ADDITIONAL_DEPENDENCIES.  Satisfy those here
+# because we aren't building a kernel.
+$(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr:
+	mkdir -p $@
+
 endif
