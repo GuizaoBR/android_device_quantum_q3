@@ -116,6 +116,7 @@ lib{,64}/libcam.client.so
 lib{,64}/libcam.device1.so
 lib{,64}/libcam.device3.so
 lib{,64}/libcamdrv.so
+lib{,64}/libcamdrv_FrmB.so
 lib{,64}/libcameracustom.so
 lib{,64}/libcam.exif.so
 lib{,64}/libcam.exif.v3.so
