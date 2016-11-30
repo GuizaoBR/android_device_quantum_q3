@@ -125,6 +125,7 @@ lib{,64}/libcam.hal3a.v3.so
 lib{,64}/libcam.halsensor.so
 lib{,64}/libcam_hwutils.so
 lib{,64}/libcam.iopipe.so
+lib{,64}/libcam.iopipe_FrmB.so
 lib{,64}/libcam.metadataprovider.so
 lib{,64}/libcam.metadata.so
 lib{,64}/libcam_mmp.so
