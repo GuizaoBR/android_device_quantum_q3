@@ -21,4 +21,5 @@ $(call add-rootdir-targets, \
     factory_init.rc \
     factory_init.usb.rc \
     factory_init.project.rc \
-    ueventd.mt6735.rc)
+    ueventd.mt6735.rc \
+	enableswap.sh )

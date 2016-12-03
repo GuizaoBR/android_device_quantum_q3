@@ -69,7 +69,12 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE:=12437684224
 
 BOARD_FLASH_BLOCK_SIZE := 4096
 
+TARGET_INIT_VENDOR_LIB := libinit_q3
+
 TARGET_SYSTEM_PROP := $(DEVICE_PATH)/system.prop
+
+# Enable Minikin text layout engine (will be the default soon)
+USE_MINIKIN := true
 
 # Audio
 USE_CUSTOM_AUDIO_POLICY := 1
